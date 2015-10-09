@@ -4,10 +4,10 @@ package compileinstruction;
  * @author ajay
  */
 
-public class Student {
+public class Student extends Info {
 
     @Deprecated
-    private static String firstName = "Testing";
+    public static String firstName = "Testing";
 
     /**
      * This method is deprecated. Use sayHi instead.
@@ -25,11 +25,7 @@ public class Student {
         System.out.println("Hi " + name + " !!");
     }
 
-    public static void main(String args[]) {
-
-        Student.display(); // it giving only warning
-        Student.display2();
-        System.out.println(Student.firstName);
+    public void show() {
+        System.out.println("Override show method");
     }
-
 }
