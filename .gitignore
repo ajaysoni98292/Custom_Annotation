@@ -1,3 +1,4 @@
 # Cutom annotation
 /.idea
+/target
 CustomAnnotation.iml
