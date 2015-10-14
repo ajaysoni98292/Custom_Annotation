@@ -1,5 +1,9 @@
 package compileinstruction;
 
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * @author ajay
  */
@@ -16,5 +20,8 @@ public class MainClass {
         Student student = new Student();
         student.show1();
 
+        Class<Student> studentClass = Student.class;
+        Method[] methods = studentClass.getMethods();
+        new ArrayList<>(Arrays.asList(methods)).forEach(method -> System.out.println(method.getName()));
     }
 }
