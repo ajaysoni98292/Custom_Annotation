@@ -11,5 +11,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Test {
-    public boolean enabled() default true;
+
+    boolean enabled() default true;
 }

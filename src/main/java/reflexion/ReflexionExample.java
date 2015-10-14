@@ -11,5 +11,7 @@ public class ReflexionExample {
 
     public static void main(String args[]) {
 
+        Class<ReflexionExample> reflexionExampleClass = ReflexionExample.class;
+      //  reflexionExampleClass.ge
     }
 }

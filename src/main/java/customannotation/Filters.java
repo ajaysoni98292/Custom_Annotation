@@ -8,18 +8,8 @@ import java.lang.annotation.Target;
 /**
  * @author ajay
  */
-
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface TesterInfo {
-
-    enum Priority  {
-        LOW, MEDIUM, HIGH
-    }
-
-    Priority priority() default Priority.MEDIUM;
-
-    String[] tags() default "";
-
-    String createdBy() default "ajay";
+public @interface Filters {
+    Filter[] value();
 }
